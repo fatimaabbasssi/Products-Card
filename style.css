@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color:rgba(7, 224, 130, 0.758);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parent{
+    width: 50vw;
+    min-height: 80vh;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+
+/* sidecard */
+
+.child1{
+    width: 40%;
+    height: 85%;
+    background-color: rgb(32, 245, 32);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: absolute;
+    top: 7.5%;
+    left: -5%;
+}
+
+.icons{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.share{
+  margin: 0.5em 0 0 0.8em;
+  color: rgb(255, 255, 255);
+}
+
+.share:hover{
+    color: rgb(5, 26, 117);
+  }
+
+.heart{
+    margin: 0.5em 0.8em 0 0;
+    color: white;
+  } 
+
+  .heart:hover{
+    color: red;
+  }
+
+.image{
+    height: 80%;
+    width: 100%;
+
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: -30%;
+    top: -5%;
+    filter: drop-shadow(15px 7px 15px #2e2d2d);
+}
+
+.options{
+    height: 15%;
+    width: 100%;
+    background-color: rgb(252, 249, 249);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1:hover{
+    border: 1px solid rgb(2, 121, 10);
+    scale: 1.2;
+}
+
+.box{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+}
+
+.box1{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+
+/* contentbox */
+
+.child2{
+    width: 60%;
+    height: 100%;
+    background-color:white;
+    position: absolute;
+    right: 0;
+    border-radius: 0 7px 7px  0;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.margin{
+    width: 90%;
+    height: 85%;
+    
+}
+
+h1{
+    text-transform: capitalize;
+    margin-top: 1em;
+}
+
+.cod{
+  
+    font-size: 1em;
+    margin-top: 0.7em;
+    color: gray;
+    margin-bottom: 1.5em;
+}
+
+.cod span{
+      vertical-align: sub;
+      padding-bottom: 1em;
+}
+
+ins{
+    font-family: sans-serif;
+    color: red;
+    text-decoration: none;
+    
+}
+
+
+ins span{
+     font-size: 2em;
+    
+}
+
+.stitle{
+    color: gray;
+    font-size: 1.7em;
+    font-family:monospace;
+    margin-top: 0.7em;
+    text-transform: uppercase;
+    
+}
+
+.select{
+    width: 57%;
+    height: 12%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boximg{
+    height: 45px;
+    width: 45px;   
+}
+
+.apple{
+    height: 45px;
+    width: 45px;
+    filter:  drop-shadow(7px 7px 5px #5f5f5f); 
+}
+
+.blue{
+    height: 40px;
+    width: 40px;
+}
+
+
+.apple:hover{
+/* border: 1px solid black; */
+scale: 1.3;
+}
+
+
+.list{
+    margin-top: 1em;
+    font-family: sans-serif;
+    color: rgb(20, 20, 20);
+    margin-left: 1em;
+}
+
+button{
+    height: 2.8em;
+    width: 120px;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    margin-left: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button:hover{
+    background-color: rgb(11, 174, 11);
+    scale: 1.1;
+}
+
+/* media queries */
+
+
+@media only screen and (max-width:1140px){
+    
+    .parent{
+        width: 70vw;
+        height: 90vh;
+        
+    }
+
+    .child1{
+        left: -5;
+
+    }
+
+    .image img{
+        left: 3px;
+    }
+    .box, .box1{
+        width:50px ;
+        height: 50px;
+        
+
+        
+    }
+
+
+    .child2{
+        margin-top: 2em;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width:830px){
+.parent{
+    height: 95vh;
+    width: 75vw;
+}
+
+
+.child2{
+    margin-top: 2em;
+}
+
+.box, .box1{
+    width: 45px;
+    height: 45px;
+}
+
+}
+
+
+@media only screen and (max-width:685px){
+   
+
+
+    .child1{
+        position: static;
+        width: 100%;
+        left: 7px;
+        height: 70%;
+        box-shadow: none;
+
+    }
+
+    .image img{
+        left: 9px;
+    }
+
+    .options{
+       padding-top: 1em;
+       background-color: white;
+    }
+
+    .box, .box1{
+        height: 50px;
+        width: 50px;
+    }
+
+    .parent{
+        /* width: 80%; */
+        width: 40%;
+        display: block;
+    }
+
+    .margin{
+        margin: 1em 1em 0 1em;
+    }
+
+    .child2{
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: block;
+        padding-bottom: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+    }
+
+    .image{
+        width: 80%;
+        position: static;
+    }
+
+    .main{
+        padding: 2em 0 0 0 ;
+    }
+
+}
+/* 
+@media only screen and (max-width:720px){
+
+
+    .image img{
+        height: 70%;
+        top: 30px;
+    }
+
+    .child1{
+        height: 70% ;
+    }
+} */
+
+
+
+
+
+@media only screen and (max-width:550px){
+
+.main{
+    display:block;
+    padding: 1em 0 0 1em;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.parent{
+    width: 90%;
+    margin-right: 2em;
+
+}
+
+}
+
+@media only screen and (max-width:440px){
+    .parent{
+        width: 90%;
+        height: 70%;
+
+    }
+
+
+    .child2{
+        min-height: 100% ;
+    }
+}
+
+@media only screen and (max-width:310px){
+
+     .parent{
+        width: 100%;
+       height: 96%;
+     }
+
+
+    .child1{
+        height: 60% ;
+    }
+
+    .child2{
+        margin-top: 1em;
+        height: 100%;
+    }
+
+
+}
